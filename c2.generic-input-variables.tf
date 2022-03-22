@@ -1,20 +1,20 @@
 variable "business_division" {
   description = "business divison name"
-  type = string #list numeric map
-  default = "sap"
+  type        = string #list numeric map
+  default     = "sap"
 }
 
 variable "environment" {
-  type = string
+  type    = string
   default = "dev"
 }
 
 variable "resource_group_name" {
-  type =  string
+  type    = string
   default = "rg-default"
 }
 
 variable "resource_group_location" {
-  type = string
+  type    = string
   default = "eastus2"
 }

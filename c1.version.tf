@@ -1,5 +1,5 @@
 #terraform provider block
- #We strongly recommend using the required_providers block to set the
+#We strongly recommend using the required_providers block to set the
 # Azure Provider source and version being used
 terraform {
   required_providers {
@@ -8,8 +8,8 @@ terraform {
       version = "=2.97.0"
     }
     random = {
-        source = "hashicorp/random"
-        version = ">=3.0"
+      source  = "hashicorp/random"
+      version = ">=3.0"
     }
   }
 }
