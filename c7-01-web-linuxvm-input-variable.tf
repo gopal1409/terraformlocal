@@ -1,0 +1,1 @@
+#here we can put input variable for linux vm
