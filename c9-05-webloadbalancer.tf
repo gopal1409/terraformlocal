@@ -44,3 +44,10 @@ resource "azurerm_lb_rule" "web_lb_rule_app1" {
   loadbalancer_id = azurerm_lb.web_lb.id
   resource_group_name = azurerm_resource_group.rg.name
 }
+
+resource "azurerm_network_interface_backend_address_pool_association" "web_nic_associate" {
+  count = var.web_linuxvm_instance_count
+  network_interface_id = element(azurerm_network_interface.web_linuxvm_nic[*].id,count.index)
+  ip_configuration_name = azurerm_network_interface.web_linuxvm_nic[count.index].ip_configuration[0].name 
+  backend_address_pool_id = azurerm_lb_backend_address_pool.web_lb_backend_addres_pool.id 
+}
