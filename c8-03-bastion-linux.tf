@@ -1,4 +1,4 @@
-#create an public ip
+/*#create an public ip
 resource "azurerm_public_ip" "bastion_linuxvm_publicip" {
   name = "${local.resource_name_prefix}-bastion-linuxvm-publicip"
   resource_group_name = azurerm_resource_group.rg.name 
@@ -42,4 +42,4 @@ resource "azurerm_linux_virtual_machine" "bastion_host_linuxvm" {
   }
  # custom_data = filebase64("${path.module}/app-scripts/redhat-webvm-script.sh")
  custom_data = base64encode(local.web_vm_custom_data)
-}
+}*/

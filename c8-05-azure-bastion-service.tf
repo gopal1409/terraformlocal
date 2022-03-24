@@ -1,4 +1,4 @@
-resource "azurerm_subnet" "bastion_service_subnet" {
+/*resource "azurerm_subnet" "bastion_service_subnet" {
   name = var.bastion_service_subnet_name
   resource_group_name = azurerm_resource_group.rg.name
   virtual_network_name =  azurerm_virtual_network.vnet.name
@@ -24,4 +24,4 @@ resource "azurerm_bastion_host" "bastion_host" {
     subnet_id = azurerm_subnet.bastion_service_subnet.id
     public_ip_address_id = azurerm_public_ip.bastion_service_publicip.id
   }
-}
+}*/

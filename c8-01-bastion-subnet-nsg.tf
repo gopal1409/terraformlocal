@@ -1,4 +1,4 @@
-#webtier subnet
+/*#webtier subnet
 #nsg
 #when we create nsg we need to open ports
 resource "azurerm_subnet" "bastionsubnet" {
@@ -45,4 +45,4 @@ resource "azurerm_network_security_rule" "bastion_nsg_rule_inbound" {
   destination_address_prefix  = "*"
   resource_group_name         = azurerm_resource_group.rg.name
   network_security_group_name = azurerm_network_security_group.bastion_subnet_nsg.name
-}
+}*/
