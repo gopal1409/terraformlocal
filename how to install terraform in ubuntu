@@ -1,0 +1,10 @@
+ 130  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+  131  sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+  132  apt install terraform
+  133  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  134  unzip awscliv2.zip
+  135  apt install unzip
+  136  unzip awscliv2.zip
+  137  ./aws/install
+  138  aws --version
+  139  terraform
